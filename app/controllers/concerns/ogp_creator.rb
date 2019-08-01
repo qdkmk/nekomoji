@@ -44,7 +44,15 @@ class OgpCreator
 
   def self.random_photo
     position = ["north","west","east","south"].sample
-    photo =  position + format("%03d.jpg",(1..17).to_a.sample)
+
+    if position == "west" || position == "east" then
+      photo =  position + format("%03d.jpg",(1..17).to_a.sample)
+    elsif position == "north" then
+      photo =  position + format("%03d.jpg",(1..46).to_a.sample)
+    else
+      photo =  position + format("%03d.jpg",(1..38).to_a.sample)
+    end
+
     font = ["Jiyucho.ttf","LogoTypeGothic.otf","rounded-mgenplus-1cp-medium.ttf"].sample
     return position,photo,font
   end
