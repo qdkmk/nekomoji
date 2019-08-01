@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-145001089-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-145001089-1');
+    </script>
     <title>NekoMoji</title>
     <%= csrf_meta_tags %>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="twitter:card" content="summary" />
-      <meta property="og:url" content="https://nekomoji.herokuapp.com/" />
-      <meta property="og:title" content="NekoMoji" />
-      <meta property="og:description" content="セリフ付き猫画像を瞬時に生成" />
-      <meta property="og:image" content="https://nekomoji.herokuapp.com/assets/images/titleblue.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary"/>
+    <meta property="og:url" content="https://nekomoji.herokuapp.com/"/>
+    <meta property="og:title" content="NekoMoji"/>
+    <meta property="og:description" content="セリフ付き猫画像を瞬時に生成"/>
+    <meta property="og:image" content="https://nekomoji.herokuapp.com/assets/images/titleblue.jpg"/>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -22,15 +32,15 @@
     <label for="trigger" class="open_button">このサービスについて</label>
   </footer>
   <div class="modal_wrap">
-  <input id="trigger" type="checkbox">
-      <div class="modal_overlay">
-          <label for="trigger" class="modal_trigger"></label>
-          <div class="modal_content">
-              <label for="trigger" class="close_button">✖️</label>
-              <h2>なんとなくネコに喋らせたい！</h2>
-              <p>そんな思いつきを瞬時に形にできるサービスです。世界中のネコがあなたのために駆けつけます！写真・フォントは著作権表記不要で利用可能なものをランダムに使用しています。</p>
-              <p>ご連絡は<a href="https://twitter.com/mmokami">こちら(Twitter)</a>まで。</p>
-          </div>
+    <input id="trigger" type="checkbox">
+    <div class="modal_overlay">
+      <label for="trigger" class="modal_trigger"></label>
+      <div class="modal_content">
+        <label for="trigger" class="close_button">✖️</label>
+        <h2>なんとなくネコに喋らせたい！</h2>
+        <p>そんな思いつきを瞬時に形にできるサービスです。世界中のネコがあなたのために駆けつけます！写真・フォントは著作権表記不要で利用可能なものをランダムに使用しています。</p>
+        <p>ご連絡は<a href="https://twitter.com/mmokami">こちら(Twitter)</a>まで。</p>
       </div>
+    </div>
   </div>
 </html>
