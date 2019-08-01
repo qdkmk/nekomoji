@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nekoneko</title>
+    <title>NekoMoji</title>
     <%= csrf_meta_tags %>
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:url" content="https://nekomoji.herokuapp.com/i" />
+      <meta property="og:title" content="NekoMoji" />
+      <meta property="og:description" content="猫画像を瞬時に生成" />
+      <meta property="og:image" content="assets/east001.jpg" />
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>

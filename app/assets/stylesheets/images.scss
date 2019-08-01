@@ -2,6 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$pc: 680px;
+$sp: 480px;
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
 body {
   background-color: #34e6d0;
 }
@@ -28,22 +42,29 @@ h1 {
   margin: auto;
 
   p {
-    font-size: 1.5rem;
+
+    font-size: 2.5rem;
     margin-top: 0;
     color: #fff;
+    @include pc {
+      font-size: 1.5rem;
+    };
   }
 }
 
 input[type="text"] {
-  width: 80%;
-  font-size: 2.5rem;
+  width: 90%;
+  height: 6rem;
+  font-size: 3rem;
   margin: 15px;
 }
 
 input[type="submit"],
 input[type="button"] {
-  width: 82%;
-  font-size: 2rem;
+  margin: 15px;
+  width: 92%;
+  height: 6rem;
+  font-size: 2.5rem;
   position: relative;
   display: inline-block;
   padding: 0.25em 0.5em;
