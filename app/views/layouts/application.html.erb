@@ -3,6 +3,7 @@
   <head>
     <title>NekoMoji</title>
     <%= csrf_meta_tags %>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:url" content="https://nekomoji.herokuapp.com/i" />
       <meta property="og:title" content="NekoMoji" />
@@ -17,4 +18,19 @@
   <body>
     <%= yield %>
   </body>
+  <footer>
+    <label for="trigger" class="open_button">このサービスについて</label>
+  </footer>
+  <div class="modal_wrap">
+  <input id="trigger" type="checkbox">
+      <div class="modal_overlay">
+          <label for="trigger" class="modal_trigger"></label>
+          <div class="modal_content">
+              <label for="trigger" class="close_button">✖️</label>
+              <h2>なんとなくネコに喋らせたい！</h2>
+              <p>そんな思いつきを瞬時に形にできるサービスです。世界中のネコがあなたのために駆けつけます！写真・フォントは著作権表記不要で利用可能なものをランダムに使用しています。</p>
+              <p>ご連絡は<a href="https://twitter.com/mmokami">こちら(Twitter)</a>まで。</p>
+          </div>
+      </div>
+  </div>
 </html>

@@ -6,7 +6,7 @@ class OgpCreator
   TEXT_POSITION = '20,20'
   BASE_FONT_PATH = './app/assets/fonts/'
   FONT_SIZE = 65
-  INDENTION_COUNT_WE = 5
+  INDENTION_COUNT_WE = 4
   INDENTION_COUNT_NS = 8
   ROW_LIMIT = 8
 
@@ -44,7 +44,7 @@ class OgpCreator
 
   def self.random_photo
     position = ["north","west","east","south"].sample
-    photo =  position + format("%03d.jpg",(1..4).to_a.sample)
+    photo =  position + format("%03d.jpg",(1..17).to_a.sample)
     font = ["Jiyucho.ttf","LogoTypeGothic.otf","rounded-mgenplus-1cp-medium.ttf"].sample
     return position,photo,font
   end
