@@ -1,0 +1,67 @@
+// Place all the styles related to the images controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #34e6d0;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  //width: 90%;
+  padding: 5%;
+}
+
+.topimage {
+  width: 90%;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+  line-height: 5.5rem;
+}
+
+.cap {
+  width: 90%;
+  margin: auto;
+
+  p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #fff;
+  }
+}
+
+input[type="text"] {
+  width: 80%;
+  font-size: 2.5rem;
+  margin: 15px;
+}
+
+input[type="submit"],
+input[type="button"] {
+  width: 82%;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #2bb9a7;
+  /*色*/
+  border-radius: 4px;
+  /*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  border: solid 2px #43f0da;
+  /*線色*/
+  &:active {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.40);
+  }
+}
+
+.nekoimage{
+  width: 100%;
+}

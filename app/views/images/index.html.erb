@@ -1,0 +1,11 @@
+<div class="container">
+
+<%= image_tag 'unt.svg',class: "topimage"%>
+<div class="cap">
+<p>セリフ付き猫画像を手軽に作成できるサービスです！</p>
+</div>
+<%= form_with url: images_ogp_path, method: :get,local: true do |form| %>
+  <%= form.text_field :text,placeholder: "セリフを入力" %>
+  <%= form.submit "画像生成", name: nil %>
+<% end %>
+</div>
