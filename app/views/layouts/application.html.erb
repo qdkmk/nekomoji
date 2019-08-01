@@ -4,11 +4,12 @@
     <title>NekoMoji</title>
     <%= csrf_meta_tags %>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary" />
+      <meta property="og:type" content="website">
       <meta property="og:url" content="https://nekomoji.herokuapp.com/" />
       <meta property="og:title" content="NekoMoji" />
       <meta property="og:description" content="セリフ付き猫画像を瞬時に生成" />
-      <meta property="og:image" content="https://nekomoji.herokuapp.com/assets/images/titleblue.svg" />
+      <meta property="og:image" content="https://nekomoji.herokuapp.com/assets/images/titleblue.jpg" />
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
