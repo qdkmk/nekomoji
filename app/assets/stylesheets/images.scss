@@ -6,14 +6,17 @@ $pc: 680px;
 $sp: 480px;
 
 @mixin pc {
-  @media (max-width: ($pc)) {
+  @media screen and (max-width: ($pc)) {
     @content;
   }
 }
 @mixin sp {
-  @media (max-width: ($sp)) {
+  @media  screen and (max-width: ($sp)) {
     @content;
   }
+}
+*{
+  box-sizing: border-box;
 }
 
 body {
@@ -23,12 +26,18 @@ body {
 .container {
   text-align: center;
   margin: auto;
-  //width: 90%;
   padding: 5%;
+  width: 80%;
+  @include sp {
+    width: 90%;
+  };
 }
 
 .topimage {
-  width: 90%;
+  width: 70%;
+  @include sp {
+    width: 90%;
+  };
 }
 
 h1 {
@@ -42,12 +51,11 @@ h1 {
   margin: auto;
 
   p {
-
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-top: 0;
     color: #fff;
-    @include pc {
-      font-size: 1.5rem;
+    @include sp {
+      font-size: 2.5rem;
     };
   }
 }
